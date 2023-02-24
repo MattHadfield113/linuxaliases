@@ -13,3 +13,4 @@ alias sailinstall80='docker run --rm -u "$(id -u):$(id -g)" -v $(pwd):/var/www/h
 alias sailinstall81='docker run --rm -u "$(id -u):$(id -g)" -v $(pwd):/var/www/html -w /var/www/html laravelsail/php81-composer:latest composer require laravel/sail --dev --ignore-platform-reqs && composer install --ignore-platform-reqs && php artisan sail:install'
 alias sailuds='sail up -d && sail shell'
 alias sails='sail shell'
+alias docker-cleanup='docker ps -aq | xargs docker stop | xargs docker rm'
