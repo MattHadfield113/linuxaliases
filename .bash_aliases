@@ -1,4 +1,4 @@
-alias update_aliases='curl -s https://raw.githubusercontent.com/MattHadfield113/linuxaliases/main/fwkaliases.sh | bash -s'
+alias update_aliases='curl -s https://raw.githubusercontent.com/MattHadfield113/linuxaliases/main/mh_update_linux_aliases.sh | bash -s'
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias vapor='[-f vapor] && sh vapor || sh vendor/bin/vapor'
 alias composer74install='docker run --rm -u "$(id -u):$(id -g)" -v $(pwd):/var/www/html -w /var/www/html laravelsail/php74-composer:latest composer install --ignore-platform-reqs'
